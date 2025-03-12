@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index2.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+nav a {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    float: left;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.box_1, .box_2 {
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catagories {
+    padding: 20px;
+    background: #e3e3e3;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.catagories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.catagories ul li {
+    padding: 8px 0;
+}
+
+.catagories ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background:  #d9edf7;
+    color: rgb(24, 24, 24);
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.boxes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: #fff;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.p-box {
+    text-align: center;
+    padding: 20px;
+    background: #d9edf7;
+    border-radius: 5px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MyLogo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box_1">
+            <h1>Hello world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat accusantium earum iste. Et inventore fugiat soluta, ea sint aperiam maxime doloribus libero debitis necessitatibus ipsum tenetur magnam itaque explicabo accusamus?
+            Tempore vel, ipsum vero tenetur voluptate, aperiam inventore iure eos ipsam est possimus perferendis reprehenderit nulla magni magnam eius exercitationem nesciunt corrupti iusto earum quisquam! Sit est aspernatur libero nam.
+            Exercitationem, eos ex veniam commodi optio iste, quo eveniet eius temporibus dolor non. Aperiam nemo consequuntur ad similique, ut praesentium beatae laborum error quis provident ratione expedita quae optio blanditiis!</p>
+        </div>
+
+        <div class="box_2">
+            <h1>Goodbay world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat accusantium earum iste. Et inventore fugiat soluta, ea sint aperiam maxime doloribus libero debitis necessitatibus ipsum tenetur magnam itaque explicabo accusamus?
+            Tempore vel, ipsum vero tenetur voluptate, aperiam inventore iure eos ipsam est possimus perferendis reprehenderit nulla magni magnam eius exercitationem nesciunt corrupti iusto earum quisquam! Sit est aspernatur libero nam.
+            Exercitationem, eos ex veniam commodi optio iste, quo eveniet eius temporibus dolor non. Aperiam nemo consequuntur ad similique, ut praesentium beatae laborum error quis provident ratione expedita quae optio blanditiis!</p>
+        </div>
+        <div class="catagories">
+            <h2>Catagories</h2>
+            <ul>
+                <li><a href="text.html">Catagories 1</a></li>
+                <li><a href="text.html">Catagories 2</a></li>
+                <li><a href="text.html">Catagories 3</a></li>
+                <li><a href="text.html">Catagories 3</a></li>
+                <li><a href="text.html">Catagories 3</a></li>
+            </ul>
+        </div>
+
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+      <div class="boxes">
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium explicabo architecto tenetur quia expedita! Natus, perferendis? In cupiditate autem voluptates similique quidem odio illum omnis? Animi quidem sapiente iste aut.</p>
+        </div>
+
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium explicabo architecto tenetur quia expedita! Natus, perferendis? In cupiditate autem voluptates similique quidem odio illum omnis? Animi quidem sapiente iste aut.</p>
+        </div>
+
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium explicabo architecto tenetur quia expedita! Natus, perferendis? In cupiditate autem voluptates similique quidem odio illum omnis? Animi quidem sapiente iste aut.</p>
+        </div>
+      </div>
+      
+      <footer>
+        &copy; 2025 MyWebsite. All rights reserved.
+    </footer>
+    </div>
+</body>
+</html>
