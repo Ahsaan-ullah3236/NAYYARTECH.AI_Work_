@@ -89,7 +89,7 @@ body {
 .feature-box {
     flex: 1;
     min-width: 300px;
-    max-width: 350px;
+    max-width: 6000px;
     padding: 30px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -116,4 +116,211 @@ body {
 .feature-box p {
     font-size: 1rem;
     color: #f1f1f1;
+}
+/* Section B Background */
+.section-b {
+    background: #e6ebf1; /* Soft background color */
+    padding: 80px 0;
+}
+
+/* Flexbox for layout */
+.feature-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Accordion Box (Increased Width) */
+.accordion-box {
+    width: 50%; /* Increased width */
+    max-width: 600px; /* Limits stretching */
+}
+
+/* Accordion Styling */
+.accordion-button {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1a8c97 !important; /* Set permanent button color */
+    border: none;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-button:hover {
+    background-color: #157882 !important; /* Darker hover effect */
+}
+
+.accordion-body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Image Styling */
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .accordion-box {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+/* Section-cBackground */
+.section-c {
+    background: #1a8c97;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* Title Styling */
+.feature-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.feature-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Email Input */
+.email-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #1a8c97;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #d1e7f0;
+    color: #0f5f66;
+}
+/* Footer Styling */
+.footer {
+    background: #1a8c97;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+/* Footer Logo */
+.footer-logo h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Footer Links */
+.footer-links h4,
+.footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.footer-social ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social ul li {
+    display: inline-block;
+}
+
+.footer-social ul li a {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.footer-social ul li a:hover {
+    color: #d1e7f0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
