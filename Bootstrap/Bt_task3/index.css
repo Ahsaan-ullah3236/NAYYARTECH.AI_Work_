@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #1a8c97;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* Social Media Icons */
+.social-icons i {
+    font-size: 1.2rem;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+    color: #f8f9fa;
+}
+
+/* Showcase Section */
+.showcase {
+    background: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGNvZGUlMjB0ZWNofGVufDB8fHx8MTY4Nzg4NjE4MQ&ixlib=rb-1.2.1&q=80&w=1920') 
+    no-repeat center center/cover;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.showcase .container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.showcase h1 {
+    font-size: 2.5rem;
+}
+
+.showcase p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: #1a8c97;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: #14777f;
+}
+
+/* Features Section */
+.section-a {
+    padding: 80px 0;
+    background-color: #1a8c97;
+    text-align: center;
+    color: white;
+}
+
+.section-a .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.feature-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.feature-box i {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #f1f1f1;
+}
