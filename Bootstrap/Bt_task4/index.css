@@ -11,11 +11,17 @@
 body {
     background: var(--bg-color);
     color: var(--font-color);
+    padding-top: 55px;
 }
 
 .navbar {
     border-bottom: 2px solid var(--primary-color);
     opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .navbar-brand, .nav-link {
@@ -28,7 +34,7 @@ body {
 
 #home-section {
     position: relative;
-    background: url('leaves-7845964_1280.jpg') no-repeat center center/cover;
+    background: url('imges/pexels-pixabay-40879.jpg') no-repeat center center/cover;
     height: 70vh;
     display: flex;
     align-items: center;
@@ -44,11 +50,39 @@ body {
     height: 100%;
     background: var(--overlay-color);
 }
-
 .fa {
     color: var(--primary-color);
     background: #fff;
     padding: 4px;
     border-radius: 5px;
     font-size: var(--icon-size);
+}
+#explore-head-section a{
+    color: #fff;
+}
+#explore-section, #shear-section{
+    .fa{
+        color: #fff;
+        background: #333333;
+        padding: 4px;
+        border-radius: 5px;
+        font-size: var(--icon-size);
+    }
+}
+#create-section{
+    .fa{
+        color: var(--primary-color);
+        background: #fff;
+        padding: 4px;
+        border-radius: 5px;
+        font-size: var(--icon-size);
+    }
+}
+#shear-head-section a{
+    color: #fff;
+    border:  2px solid var(--font-color);
+}
+#shear-head-section a:hover{
+    background: #fff;
+    color: var(--bg-color);
 }
