@@ -32,11 +32,42 @@ console.log(experience, typeof experience); // null object (JavaScript quirk)
 console.log(total, typeof total);        // 100 number
 console.log(job, typeof job);            // undefined undefined
 
+
+
 // Template String and concatination 
 // concatination
 console.log(`My name is ` + naMe + `and i am ` + age);
 // Template String
 console.log(`My name is ${naMe} ans I am ${age} years old`);
+
+
+
+// Arrays 
+// An array is a collection of multiple values stored in a single variable
+// Creating an array
+let fruits = ["Apple", "Banana", "Orange"];
+
+// Adding elements
+fruits.push("Grapes");      // Adds "Grapes" at the end
+fruits.unshift("Mango");    // Adds "Mango" at the beginning
+
+// Removing elements
+fruits.pop();    // Removes last element ("Grapes")
+fruits.shift();  // Removes first element ("Mango")
+
+// Accessing and modifying elements
+console.log(fruits[1]);  // "Orange"
+fruits[1] = "Cherry";    // Replaces "Orange" with "Cherry"
+
+// Array methods
+console.log(fruits.includes("Banana"));
+console.log(fruits.indexOf("Cherry")); 
+console.log(fruits.join(" - "));
+
+console.log(fruits); 
+
+
+
 
 
 
