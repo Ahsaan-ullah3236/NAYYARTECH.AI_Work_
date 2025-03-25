@@ -119,6 +119,45 @@ console.log(todo.status);       // "Completed"
 
 
 
+// loops for and while 
+// Using a for loop
+console.log("For Loop:");
+for (let i = 1; i <= 3; i++) {
+    console.log("Step " + i);
+}
+
+// Using a while loop
+console.log("While Loop:");
+let j = 1;
+while (j <= 3) {
+    console.log("Step " + j);
+    j++;
+}
+
+
+
+// foreach map and filter 
+let numbers = [1, 2, 3, 4, 5];
+
+// 1. forEach - Loops through the array (no return value)
+console.log("forEach:");
+numbers.forEach(num => console.log(num * 2)); // Just prints, does not return a new array
+
+// 2. map - Creates a new array by doubling each value
+let doubledNumbers = numbers.map(num => num * 2);
+console.log("map:", doubledNumbers); // [2, 4, 6, 8, 10]
+
+// 3. filter - Returns a new array with only even numbers
+let evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log("filter:", evenNumbers); // [2, 4]
+
+
+
+
+
+
+
+
 
 
 
