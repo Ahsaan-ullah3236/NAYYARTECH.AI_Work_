@@ -2,6 +2,9 @@ console.log("hello");
 console.error("this is my error");
 console.warn("this is my error");
 
+
+
+
 // let var const 
 // var 
 var x = 10;
@@ -15,6 +18,10 @@ console.log(y);
 const z = 50;
 console.log(z);
 
+
+
+
+// Datatypes 
 // String Boolean integer float null number and undefined
 let naMe = "Ahsan";      // String
 let isDeveloper = true;  // Boolean
@@ -34,11 +41,15 @@ console.log(job, typeof job);            // undefined undefined
 
 
 
+
+
 // Template String and concatination 
 // concatination
 console.log(`My name is ` + naMe + `and i am ` + age);
 // Template String
 console.log(`My name is ${naMe} ans I am ${age} years old`);
+
+
 
 
 
@@ -63,9 +74,47 @@ fruits[1] = "Cherry";    // Replaces "Orange" with "Cherry"
 console.log(fruits.includes("Banana"));
 console.log(fruits.indexOf("Cherry")); 
 console.log(fruits.join(" - "));
-
 console.log(fruits); 
 
+
+
+
+
+// object 
+// An object is a collection of related information stored as key-value pairs.
+let person = {
+    name: "Ahsan",
+    age: 25,
+    isDeveloper: true,
+    skills: ["JavaScript", "React", "Next.js"],
+    greet: function() {
+        return "Hello, " + this.name + "!";
+    }
+};
+console.log(person.name);       // "Ahsan"
+console.log(person.skills[1]);  // "React"
+console.log(person.greet());    // "Hello, Ahsan!"
+
+
+// object with todo example 
+let todo = {
+    title: "Complete React Project",
+    status: "In Progress",
+    priority: "High",
+    dueDate: "2025-03-30",
+    tasks: ["Setup project", "Design UI", "Implement features"],
+    markCompleted: function() {
+        this.status = "Completed";
+    }
+};
+
+// Accessing object properties
+console.log(todo.title);        // "Complete React Project"
+console.log(todo.tasks[1]);     // "Design UI"
+
+// Updating status using a method
+todo.markCompleted();
+console.log(todo.status);       // "Completed"
 
 
 
