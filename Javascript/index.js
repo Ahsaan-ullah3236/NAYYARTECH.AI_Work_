@@ -152,6 +152,16 @@ let evenNumbers = numbers.filter(num => num % 2 === 0);
 console.log("filter:", evenNumbers); // [2, 4]
 
 
+// if else 
+let Age = 18;
+
+if (Age >= 18) {
+    console.log("You are eligible to vote.");
+} else {
+    console.log("You are not eligible to vote.");
+}
+
+
 
 
 
