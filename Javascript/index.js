@@ -230,7 +230,7 @@ console.log(addNumbers(5, 3));
 
 
 // constructure function 
-function Person1(name, age) {
+function peerson1(name, age) {
     this.name = name;
     this.age = age;
 
@@ -240,8 +240,8 @@ function Person1(name, age) {
 }
 
 // Creating objects using the constructor function
-let person1 = new Person1("Ahsan", 25);
-let person2 = new Person1("Ali", 30);
+let person1 = new peerson1rson1("Ahsan", 25);
+let person2 = new peerson1rson1("Ali", 30);
 
 console.log(person1.greet()); // Output: Hello, my name is Ahsan and I am 25 years old.
 console.log(person2.greet()); // Output: Hello, my name is Ali and I am 30 years old.
