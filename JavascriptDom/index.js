@@ -100,6 +100,7 @@ console.log(itemslist.parentElement);
 itemslist.parentElement.style.backgroundColor = '#f4f4f4'
 console.log(itemslist.parentElement.parentElement.parentElement);
 
+var itemslist   = document.querySelector("#items");
 // child node 
 // console.log(itemslist.childNodes);
 
@@ -107,8 +108,54 @@ console.log(itemslist.children);
 console.log(itemslist.children[1]);
 itemslist.children[1].style.backgroundColor = 'green'
 
+
 // firstChild  
-console.log( );
+console.log(itemslist.firstChild);
+
+
+
+// firstChild Element Child 
+console.log(itemslist.firstElementChild);
+itemslist.firstElementChild.textContent = 'Hello World'
+
+
+
+// first Child 
+var thirdItem = document.querySelectorAll('.list-group-item')[2];
+console.log(thirdItem.previousElementSibling); 
+
+thirdItem.previousElementSibling.textContent = "I am Previous Sibling";
+thirdItem.previousElementSibling.style.color = "red";
+
+
+
+// Next Siblings 
+var secondItem = document.querySelectorAll('.list-group-item')[1]; 
+console.log(secondItem.nextElementSibling); 
+
+secondItem.nextElementSibling.style.backgroundColor = "lightblue";
+
+
+
+// last child and change text 
+var itemList = document.querySelector("#items");
+console.log(itemList.lastElementChild); 
+
+itemList.lastElementChild.textContent = "I am Last";
+itemList.lastElementChild.style.border = "2px solid black";
+
+
+
+// First Child and Change Text
+var itemList = document.querySelector("#items");
+console.log(itemList.firstElementChild); // Logs "Item 1"
+
+itemList.firstElementChild.textContent = "I am First";
+itemList.firstElementChild.style.backgroundColor = "yellow";
+
+
+
+
 
 
 
