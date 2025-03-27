@@ -1,3 +1,4 @@
+
 console.dir(document);
 console.log(document.domain);
 console.log(document.URL);
@@ -13,6 +14,7 @@ console.log(document.forms[0]);
 console.log(document.links);
 console.log(document.images);
 
+
 // Selector 
 // document.getElementById
 console.log(document.getElementById('header-title'));
@@ -24,7 +26,6 @@ console.log(headerTitle);
 console.log(headerTitle.innerText);
 headerTitle.innerHTML = '<h1>hI my name is ahsan </h1>';
 headerTitle.style.borderBottom = 'solid 3px black'
-
 
 
 // document.getElementsByClassName()
@@ -69,7 +70,6 @@ headerQuery.innerHTML = '<h1>Hi, my name is Ahsan</h1>';
 headerQuery.style.borderBottom = 'solid 3px black';
 
 
-
 // document.querySelectorAll()
 var headersAll = document.querySelectorAll('.fw-bold');
 headersAll.forEach(header => {
@@ -89,11 +89,13 @@ var parentElement = headerTitle.parentElement;
 console.log(parentElement);
 // parentElement.style.backgroundColor = 'lightgray';
 
+
 // parents Node 
 var itemslist   = document.querySelector("#items");
 console.log(itemslist.parentNode);
 itemslist.parentNode.style.backgroundColor = '#f4f4f4'
 console.log(itemslist.parentNode.parentNode.parentNode);
+
 
 // parents Elements
 console.log(itemslist.parentElement);
@@ -101,9 +103,10 @@ itemslist.parentElement.style.backgroundColor = '#f4f4f4'
 console.log(itemslist.parentElement.parentElement.parentElement);
 
 var itemslist   = document.querySelector("#items");
+
+
 // child node 
 // console.log(itemslist.childNodes);
-
 console.log(itemslist.children);
 console.log(itemslist.children[1]);
 itemslist.children[1].style.backgroundColor = 'green'
@@ -113,20 +116,16 @@ itemslist.children[1].style.backgroundColor = 'green'
 console.log(itemslist.firstChild);
 
 
-
 // firstChild Element Child 
 console.log(itemslist.firstElementChild);
 itemslist.firstElementChild.textContent = 'Hello World'
 
 
-
 // first Child 
 var thirdItem = document.querySelectorAll('.list-group-item')[2];
 console.log(thirdItem.previousElementSibling); 
-
 thirdItem.previousElementSibling.textContent = "I am Previous Sibling";
 thirdItem.previousElementSibling.style.color = "red";
-
 
 
 // Next Siblings 
@@ -136,20 +135,18 @@ console.log(secondItem.nextElementSibling);
 secondItem.nextElementSibling.style.backgroundColor = "lightblue";
 
 
-
 // last child and change text 
 var itemList = document.querySelector("#items");
 console.log(itemList.lastElementChild); 
+
 
 itemList.lastElementChild.textContent = "I am Last";
 itemList.lastElementChild.style.border = "2px solid black";
 
 
-
 // First Child and Change Text
 var itemList = document.querySelector("#items");
-console.log(itemList.firstElementChild); // Logs "Item 1"
-
+console.log(itemList.firstElementChild);
 itemList.firstElementChild.textContent = "I am First";
 itemList.firstElementChild.style.backgroundColor = "yellow";
 
@@ -157,10 +154,50 @@ itemList.firstElementChild.style.backgroundColor = "yellow";
 
 
 
+// third Part 
+// Evnet addEventListener
+ const my_Button = document.getElementById('button').addEventListener('click', buttonClick);
+ function buttonClick(e){
+    // console.log("Button was clicked ");
+    // document.getElementById('header-title').textContent = 'changed';
+    // document.querySelector('#main').style.backgroundColor= '#f4f4f4';
+    console.log(e.target);
+    console.log(e.target.id);
+    console.log(e.target.className);
+    console.log(e.target.className);
+    // var output = document.getElementById('output');
+    // output.innerHTML = '<h3> +e.target.id+</h3>';
+ }
 
+  // Get the button element by its ID.
+  const button = document.getElementById('button');
 
+  // Add a keydown event listener.
+  button.addEventListener('keydown', function(event) {
+    console.log('Key down:', event.key);
+  });
 
+  // Add a keypress event listener.
+  button.addEventListener('keypress', function(event) {
+    console.log('Key press:', event.key);
+  });
 
+  // Add a keyup event listener.
+  button.addEventListener('keyup', function(event) {
+    console.log('Key up:', event.key);
+  });
+
+  // Add a focus event listener.
+  button.addEventListener('focus', function() {
+    console.log('Button has received focus.');
+  });
+
+  // Add a blur event listener.
+  button.addEventListener('blur', function() {
+    console.log('Button has lost focus.');
+  });
+
+  
 
 
 
